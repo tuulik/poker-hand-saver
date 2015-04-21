@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Http\Requests\EditUserRequest;
 
 class UserController extends Controller {
 
@@ -14,5 +15,15 @@ class UserController extends Controller {
     return view('editUser', ['user' => $user]);
   }
 
-  fucntion store()
+  function update(User $user, EditUserRequest $request) {
+    $user->name = $request->name;
+    $user->email = $request->email;
+    $user->save();
+    return view('userEdited');
+  }
+
+  function delete(User $user) {
+    $user->delete();
+    return view('userEdited');
+  }
 }

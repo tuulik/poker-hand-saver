@@ -26,8 +26,13 @@ Route::bind('user', function($id) {
 	return App\User::find($id);
 });
 
-Entrust::routeNeedsPermission('edit-user/{user}', 'edit-user');
+Entrust::routeNeedsPermission('edit-user/*', 'edit-user');
 Route::get('edit-user/{user}', 'User\UserController@edit');
+
+Route::patch('update-user/{user}', 'User\UserController@update');
+
+Entrust::routeNeedsPermission('delete-user/*', 'delete-user');
+Route::get('delete-user/{user}', 'User\UserController@delete');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

@@ -2,14 +2,12 @@
 
 @section('content')
     <h1>Edit user</h1>
-    {!! Form::model($user, ['url' => 'updateUser' . $user->id, 'method' => 'PATCH']) !!}
-
+    {!! Form::model($user, ['url' => 'update-user/' . $user->id, 'method' => 'PATCH']) !!}
         <div class="form-group">
-            {!! Form::text('name', $user->name, ['class' => 'form-control'] !!}
+            {!! Form::text('name', null, ['class' => 'form-control']) !!}
         </div>
-
         <div class="form-group">
-            {!! Form::text('email', $user->email, ['class' => 'form-control'] !!}
+            {!! Form::text('email', null, ['class' => 'form-control']) !!}
         </div>
 
         <div class="form-group">
