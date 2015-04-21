@@ -19,11 +19,11 @@ class UserController extends Controller {
     $user->name = $request->name;
     $user->email = $request->email;
     $user->save();
-    return view('userEdited');
+    return redirect('list-users');
   }
 
   function delete(User $user) {
     $user->delete();
-    return view('userEdited');
+    return redirect('list-users');
   }
 }

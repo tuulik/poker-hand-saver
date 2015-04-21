@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use Zizaco\Entrust\EntrustFacade as Entrust;
+
 class HomeController extends Controller {
 
 	/*
@@ -30,6 +32,8 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
+		if(Entrust::hasRole('admin'))
+			return view('adminHome');
 		return view('home');
 	}
 
