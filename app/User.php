@@ -6,12 +6,11 @@ use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
-use Usman\Guardian\AccessControl\AccessControlTrait;
-use Usman\Guardian\AccessControl\AccessControlInterface;
+use Zizaco\Entrust\Traits\EntrustUserTrait;
 
-class User extends Model implements AccessControlInterface, AuthenticatableContract, CanResetPasswordContract {
+class User extends Model implements AuthenticatableContract, CanResetPasswordContract {
 
-	use Authenticatable, CanResetPassword, AccessControlTrait;
+	use Authenticatable, CanResetPassword, EntrustUserTrait;
 
 	/**
 	 * The database table used by the model.
