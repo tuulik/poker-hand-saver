@@ -12,9 +12,7 @@ class EditUserRequest extends Request {
 	 */
 	public function authorize()
 	{
-		if(Entrust::can('edit-user'))
 			return true;
-		return false;
 	}
 
 	/**
