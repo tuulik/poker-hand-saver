@@ -23,6 +23,7 @@ class EditUserRequest extends Request {
 	public function rules()
 	{
 		return [
+			'avatar' => 'image|max:2000',
 			'name' => 'required',
 			'email' => 'required'
 		];

@@ -5,6 +5,8 @@ use App\User;
 use App\Http\Requests\EditUserRequest;
 use Entrust;
 use Auth;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\File;
 
 class UserController extends Controller {
 
@@ -28,6 +30,17 @@ class UserController extends Controller {
     if (Entrust::can('edit-user') || Auth::user()->id == $user->id) {
       $user->name = $request->name;
       $user->email = $request->email;
+
+      if ($request->hasFile('avatar')) {
+        if ($user->avatar != null) {
+          File::delete(public_path() . '/avatars/' . $user->avatar);
+        }
+        $avatarFileName = $user->name . 'avatar' . '.' . Request::file('avatar')->guessExtension();
+        $avatarPath = public_path() . '/avatars';
+        $request->file('avatar')->move($avatarPath, $avatarFileName);
+
+        $user->avatar = $avatarFileName;
+      }
       $user->save();
       if (Entrust::hasRole('admin'))
         return redirect('list-users');
