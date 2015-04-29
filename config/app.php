@@ -147,8 +147,8 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
-		'Zizaco\Entrust\EntrustServiceProvider'
-
+		'Zizaco\Entrust\EntrustServiceProvider',
+		'Bkwld\Croppa\ServiceProvider'
 	],
 
 	/*
@@ -199,8 +199,8 @@ return [
 		'Form'      => 'Illuminate\Html\FormFacade',
 		'HTML'      => 'Illuminate\Html\HtmlFacade',
 
-		'Entrust' => 'Zizaco\Entrust\EntrustFacade'
-
+		'Entrust' => 'Zizaco\Entrust\EntrustFacade',
+		'Croppa' => 'Bkwld\Croppa\Facade'
 	],
 
 ];

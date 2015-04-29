@@ -5,7 +5,11 @@
     {!! Form::model($user, ['url' => 'update-user/' . $user->id, 'method' => 'PATCH', 'files' => true]) !!}
         <div class="form-group">
             {!! Form::label('avatar', 'Avatar') !!}
-            {!! HTML::image(asset('/avatars/' . $user->avatar)) !!}
+            @if($user->avatar != null)
+                <img src="{{ Croppa::url('/avatars/' . $user->avatar, 100, 100) }}">
+            @else
+                <img src="{{ Croppa::url('/avatars/default.png', 100, 100) }}">
+            @endif
             {!! Form::file('avatar') !!}
         </div>
         <div class="form-group">
