@@ -6,10 +6,10 @@
         <div class="form-group">
             {!! Form::label('avatar', 'Avatar') !!}
             @if($user->avatar != null)
-                <img src="{{ Croppa::url('/avatars/' . $user->avatar, 100, 100) }}">
+                <img src="{{ Croppa::url(asset('/avatars/' . $user->avatar), 100, 100) }}">
             @else
-                <img src="{{ Croppa::url('/avatars/default.png', 100, 100) }}">
-            @endif
+                <img src="{{ Croppa::url(asset('/avatars/default.png'), 100, 100) }}">
+            @endif<br>
             {!! Form::file('avatar') !!}
         </div>
         <div class="form-group">
