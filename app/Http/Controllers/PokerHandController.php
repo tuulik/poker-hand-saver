@@ -14,7 +14,7 @@ class PokerHandController extends Controller {
 	 */
 	public function index()
 	{
-		//
+
 	}
 
 	/**
