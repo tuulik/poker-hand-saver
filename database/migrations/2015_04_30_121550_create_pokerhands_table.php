@@ -16,12 +16,8 @@ class CreatePokerhandsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('owner')->unsigned();
-			$table->string('firstCard');
-			$table->string('secondCard');
-			$table->string('thirdCard');
-			$table->string('fourthCard');
-			$table->string('fifthCard');
-			$table->text('description');
+			$table->text('hand');
+			$table->text('description')->nullable();
 			$table->timestamps();
 		});
 

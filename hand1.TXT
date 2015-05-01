@@ -1,0 +1,27 @@
+﻿** Hand # 5539773153 starting - 2015-04-23 19:03:58
+** 6 Seat (Turbo)[14577897]:Table 1 [Multi Table Hold'em] (100|200 NL - MTT) Real Money
+
+snukeris sitting in seat 1 with 4,380
+automatic13 sitting in seat 2 with 1,070
+ChristinaRonaldo sitting in seat 3 with 1,515
+Jinn15 sitting in seat 4 with 2,035[Dealer]
+snukeris posted the small blind - 100
+automatic13 posted the big blind - 200
+
+** Dealing cards to automatic13: 10h, 8h
+ChristinaRonaldo folded
+Jinn15 folded
+snukeris went all-in - 4,280
+automatic13 went all-in - 870
+
+snukeris shows: 4c, As
+automatic13 shows: 10h, 8h
+
+** Dealing the flop: 6s, Ks, 9c
+
+** Dealing the turn: 2c
+
+** Dealing the river: 5s
+automatic13 shows: 10h, 8h
+snukeris wins 2,140 from the main pot
+

@@ -5,7 +5,9 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class PokerHandController extends Controller {
+use App\PokerHand;
+
+class PokerhandController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -14,7 +16,8 @@ class PokerHandController extends Controller {
 	 */
 	public function index()
 	{
-
+		$hands = PokerHand::all();
+		return view('listHands', ['hands' => $hands]);
 	}
 
 	/**
