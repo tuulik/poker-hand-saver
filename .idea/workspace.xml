@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="44d50d90-aab4-4f1b-a44d-021e80425c05" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_04_30_121550_create_pokerhands_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_04_30_121550_create_pokerhands_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/listHands.blade.php" afterPath="$PROJECT_DIR$/resources/views/listHands.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MOVED" beforePath="D:\xampp\htdocs\poker-hand-saver\app\Http\Controllers\PokerHandController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PokerhandController.php" />
       <change type="MOVED" beforePath="D:\xampp\htdocs\poker-hand-saver\app\PokerHand.php" afterPath="$PROJECT_DIR$/app/Pokerhand.php" />
@@ -33,7 +34,7 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6923077" vertical-offset="206" max-vertical-offset="1122">
+            <state vertical-scroll-proportion="-4.8461537" vertical-offset="10" max-vertical-offset="1122">
               <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding>
                 <element signature="e#44#80#0#PHP" expanded="true" />
@@ -42,14 +43,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PokerhandController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PokerhandController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PokerhandController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25542572" vertical-offset="0" max-vertical-offset="1581">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state vertical-scroll-proportion="-4.6538463" vertical-offset="219" max-vertical-offset="1581">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
               <folding>
                 <element signature="e#39#61#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listHands.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/listHands.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.14190318" vertical-offset="0" max-vertical-offset="599">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,21 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listHands.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/listHands.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="204">
-              <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="2015_04_30_121550_create_pokerhands_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2015_04_30_121550_create_pokerhands_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="765">
-              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+            <state vertical-scroll-proportion="-1.4615384" vertical-offset="166" max-vertical-offset="765">
+              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -106,31 +107,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014_10_12_100000_create_password_resets_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="646">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2015_04_21_111429_entrust_setup_tables.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2015_04_21_111429_entrust_setup_tables.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.5" vertical-offset="17" max-vertical-offset="1292">
-              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Pokerhand.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Pokerhand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="187">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="272">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.153847" vertical-offset="13" max-vertical-offset="612">
+              <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Permission.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Permission.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -144,9 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/usm4n/guardian/src/Usman/Guardian/Http/routes.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2014_07_31_165747_create_users_table.php" />
-        <option value="$PROJECT_DIR$/public/packages/usm4n/guardian/assets/js/jquery.js" />
         <option value="$PROJECT_DIR$/resources/views/vendor/guardian/partials/user/list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/guardian/partials/user/search-form.blade.php" />
         <option value="$PROJECT_DIR$/vendor/usm4n/guardian/public/assets/js/jquery.js" />
@@ -167,7 +165,6 @@
         <option value="$PROJECT_DIR$/vendor/usm4n/guardian/tests/Integration/ValidatorTest.php" />
         <option value="$PROJECT_DIR$/app/Role.php" />
         <option value="$PROJECT_DIR$/app/Permission.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/database/seeds/Permissions.php" />
         <option value="$PROJECT_DIR$/database/seeds/Users.php" />
         <option value="$PROJECT_DIR$/database/seeds/Roles.php" />
@@ -190,11 +187,15 @@
         <option value="$PROJECT_DIR$/resources/views/editUser.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_04_30_121550_create_pokerhand_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_04_30_121550_create_pokerhands_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/RolesUsersPermissions.php" />
         <option value="$PROJECT_DIR$/resources/views/showHands.blade.php" />
         <option value="$PROJECT_DIR$/app/PokerHand.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PokerHandController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_04_30_121550_create_pokerhands_table.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/Pokerhand.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PokerhandController.php" />
+        <option value="$PROJECT_DIR$/resources/views/listHands.blade.php" />
       </list>
     </option>
   </component>
@@ -208,8 +209,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-36" />
-    <option name="y" value="45" />
+    <option name="x" value="-42" />
+    <option name="y" value="29" />
     <option name="width" value="1378" />
     <option name="height" value="780" />
   </component>
@@ -586,8 +587,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-36" y="45" width="1378" height="780" extended-state="0" />
-    <editor active="false" />
+    <frame x="-42" y="29" width="1378" height="780" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -596,7 +597,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37121212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37121212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -755,13 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="200">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Permission.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -937,14 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="612">
-          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="646">
@@ -961,6 +947,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.5" vertical-offset="76" max-vertical-offset="714">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/RolesUsersPermissions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.192307" vertical-offset="183" max-vertical-offset="782">
@@ -971,17 +965,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5" vertical-offset="76" max-vertical-offset="714">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6923077" vertical-offset="206" max-vertical-offset="1122">
+        <state vertical-scroll-proportion="-4.8461537" vertical-offset="10" max-vertical-offset="1122">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
             <element signature="e#44#80#0#PHP" expanded="true" />
@@ -989,18 +975,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_04_30_121550_create_pokerhands_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Permission.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="765">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/listHands.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="204">
-          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1013,21 +991,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.153847" vertical-offset="13" max-vertical-offset="612">
+          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_04_30_121550_create_pokerhands_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4615384" vertical-offset="166" max-vertical-offset="765">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Pokerhand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="187">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="272">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PokerhandController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25542572" vertical-offset="0" max-vertical-offset="1581">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state vertical-scroll-proportion="-4.6538463" vertical-offset="219" max-vertical-offset="1581">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
           <folding>
             <element signature="e#39#61#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/listHands.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14190318" vertical-offset="0" max-vertical-offset="599">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

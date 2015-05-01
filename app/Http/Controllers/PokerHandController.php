@@ -16,7 +16,7 @@ class PokerhandController extends Controller {
 	 */
 	public function index()
 	{
-		$hands = PokerHand::all();
+		$hands = Pokerhand::with('user')->get();
 		return view('listHands', ['hands' => $hands]);
 	}
 
