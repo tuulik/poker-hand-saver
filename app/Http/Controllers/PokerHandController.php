@@ -4,8 +4,10 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\CreateHandRequest;
 
 use App\PokerHand;
+use Illuminate\Support\Facades\Auth as Auth;
 
 class PokerhandController extends Controller {
 
@@ -27,7 +29,7 @@ class PokerhandController extends Controller {
 	 */
 	public function create()
 	{
-		//
+			return view('createHand');
 	}
 
 	/**
@@ -35,9 +37,16 @@ class PokerhandController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(CreateHandRequest $request)
 	{
-		//
+		$hand = new Pokerhand();
+		$hand->user_id = Auth::user()->id;
+		$hand->hand = $request->hand;
+		if($request->description != null) {
+			$hand->description = $request->description;
+		}
+		$hand->save();
+		return redirect('pokerhand');
 	}
 
 	/**
