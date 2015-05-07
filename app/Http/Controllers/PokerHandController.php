@@ -57,7 +57,8 @@ class PokerhandController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		$hand = Pokerhand::find($id);
+		return view('showHand', ['hand' => $hand]);
 	}
 
 	/**
