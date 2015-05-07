@@ -148,7 +148,8 @@ return [
 		'App\Providers\RouteServiceProvider',
 
 		'Zizaco\Entrust\EntrustServiceProvider',
-		'Bkwld\Croppa\ServiceProvider'
+		'Bkwld\Croppa\ServiceProvider',
+		'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider'
 	],
 
 	/*
@@ -200,7 +201,8 @@ return [
 		'HTML'      => 'Illuminate\Html\HtmlFacade',
 
 		'Entrust' => 'Zizaco\Entrust\EntrustFacade',
-		'Croppa' => 'Bkwld\Croppa\Facade'
+		'Croppa' => 'Bkwld\Croppa\Facade',
+		'LaravelLocalization' => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization'
 	],
 
 ];
