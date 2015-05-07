@@ -11,7 +11,10 @@ use Illuminate\Support\Facades\File;
 class UserController extends Controller {
 
   function view(User $user) {
-    return view('viewUser', ['user' => $user]);
+    $editUser = false;
+    if(Entrust::can('edit-user') || Auth::user()->id == $user->id)
+      $editUser = true;
+    return view('viewUser', ['user' => $user, 'editUser' => $editUser]);
   }
 
   function getList() {

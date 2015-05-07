@@ -9,9 +9,9 @@ class RolesUsersPermissions extends Seeder {
 
   function run()
   {
+    DB::table('users')->delete();
     DB::table('roles')->delete();
     DB::table('permissions')->delete();
-    DB::table('users')->delete();
 
     $adminRole = new Role();
     $adminRole->name = 'admin';
@@ -36,6 +36,14 @@ class RolesUsersPermissions extends Seeder {
     $deleteUser->name = 'delete-user';
     $deleteUser->save();
 
-    $adminRole->attachPermissions([$listUsers, $editUser, $deleteUser]);
+    $editPokerhand = new Permission();
+    $editPokerhand->name = 'edit-pokerhand';
+    $editPokerhand->save();
+
+    $deletePokerhand = new Permission();
+    $deletePokerhand->name = 'delete-pokerhand';
+    $deletePokerhand->save();
+
+    $adminRole->attachPermissions([$listUsers, $editUser, $deleteUser, $editPokerhand, $deletePokerhand]);
   }
 }

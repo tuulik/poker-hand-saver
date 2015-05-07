@@ -5,9 +5,11 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\CreateHandRequest;
+use App\Http\Requests\EditPokerhandRequest;
 
 use App\PokerHand;
 use Illuminate\Support\Facades\Auth as Auth;
+use Entrust;
 
 class PokerhandController extends Controller {
 
@@ -29,7 +31,9 @@ class PokerhandController extends Controller {
 	 */
 	public function create()
 	{
+		if(Auth::check())
 			return view('createHand');
+		abort('403');
 	}
 
 	/**
@@ -58,7 +62,10 @@ class PokerhandController extends Controller {
 	public function show($id)
 	{
 		$hand = Pokerhand::find($id);
-		return view('showHand', ['hand' => $hand]);
+		$editHand = false;
+		if(Auth::user()->id == $hand->user_id || Entrust::can('edit-pokerhand'))
+			$editHand = true;
+		return view('showHand', ['hand' => $hand, 'editHand' => $editHand]);
 	}
 
 	/**
@@ -69,7 +76,11 @@ class PokerhandController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+		$hand = Pokerhand::find($id);
+		if(Auth::user()->id == $hand->user_id || Entrust::can('edit-pokerhand')) {
+			return view('editHand', ['pokerhand' => $hand]);
+		}
+		abort('403');
 	}
 
 	/**
@@ -78,9 +89,18 @@ class PokerhandController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($id, EditPokerhandRequest $request)
 	{
-		//
+		$hand = Pokerhand::find($id);
+		if(Auth::user()->id == $hand->user_id || Entrust::can('edit-pokerhand')) {
+			$hand->hand = $request->hand;
+			if($request->description != null) {
+				$hand->description = $request->description;
+			}
+			$hand->save();
+			return redirect('pokerhand/' . $id);
+		}
+		abort('403');
 	}
 
 	/**
@@ -91,7 +111,12 @@ class PokerhandController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		$hand = Pokerhand::find($id);
+		if(Auth::user()->id == $hand->user_id || Entrust::can('delete-pokerhand')) {
+			$hand->delete();
+			return redirect('pokerhand/');
+		}
+		abort('403');
 	}
 
 }
