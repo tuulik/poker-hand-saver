@@ -45,8 +45,7 @@ class UserController extends Controller {
         $user->avatar = $avatarFileName;
       }
       $user->save();
-      if (Entrust::hasRole('admin'))
-        return redirect('list-users');
+
       return redirect('view-user/' . $user->id);
     }
     abort('403');

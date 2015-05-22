@@ -149,7 +149,8 @@ return [
 
 		'Zizaco\Entrust\EntrustServiceProvider',
 		'Bkwld\Croppa\ServiceProvider',
-		'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider'
+		'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
+		'Mews\Purifier\PurifierServiceProvider'
 	],
 
 	/*
@@ -202,7 +203,8 @@ return [
 
 		'Entrust' => 'Zizaco\Entrust\EntrustFacade',
 		'Croppa' => 'Bkwld\Croppa\Facade',
-		'LaravelLocalization' => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization'
+		'LaravelLocalization' => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization',
+		'Purifier' => 'Mews\Purifier\Facades\Purifier'
 	],
 
 ];

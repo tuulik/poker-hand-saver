@@ -8,7 +8,7 @@
         @else
             <img src="{{ Croppa::url(asset('/avatars/default.png'), 100, 100) }}">
         @endif
-        <br><a href="{{url('view-user/' . $hand->user->id)}}">{{$hand->user->name }}</a> {{ $hand->user->avatar }} <br>Hand: {{$hand->hand}} <br>Description: {{$hand->description}}
+        <br><a href="{{url('view-user/' . $hand->user->id)}}">{{$hand->user->name }}</a> {{ $hand->user->avatar }} <br>Hand: {{$hand->hand}} <br>Description: {!!$hand->description!!}
         @if($editHand == true)
             <br><a href="{{$hand->id . '/edit'}}">Edit hand</a>
         @endif

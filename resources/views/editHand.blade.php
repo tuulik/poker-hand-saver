@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('head')
+    <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+    <script>tinymce.init({selector:'textarea'});</script>
+@endsection
+
 @section('content')
     <h1>Edit poker hand</h1>
     {!! Form::model($pokerhand, ['url' => 'pokerhand/' . $pokerhand->id, 'method' => 'PATCH']) !!}
@@ -9,7 +14,7 @@
     </div>
     <div class="form-group">
         {!! Form::label('description', 'Description') !!}
-        {!! Form::text('description', null, ['class' => 'form-control']) !!}
+        {!! Form::textarea('description') !!}
     </div>
 
     <div class="form-group">

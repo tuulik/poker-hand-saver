@@ -10,6 +10,7 @@ use App\Http\Requests\EditPokerhandRequest;
 use App\PokerHand;
 use Illuminate\Support\Facades\Auth as Auth;
 use Entrust;
+use Purifier;
 
 class PokerhandController extends Controller {
 
@@ -47,7 +48,8 @@ class PokerhandController extends Controller {
 		$hand->user_id = Auth::user()->id;
 		$hand->hand = $request->hand;
 		if($request->description != null) {
-			$hand->description = $request->description;
+			$description = Purifier::clean($request->description);
+			$hand->description = $description;
 		}
 		$hand->save();
 		return redirect('pokerhand');
@@ -95,7 +97,8 @@ class PokerhandController extends Controller {
 		if(Auth::user()->id == $hand->user_id || Entrust::can('edit-pokerhand')) {
 			$hand->hand = $request->hand;
 			if($request->description != null) {
-				$hand->description = $request->description;
+				$description = Purifier::clean($request->description);
+				$hand->description = $description;
 			}
 			$hand->save();
 			return redirect('pokerhand/' . $id);
