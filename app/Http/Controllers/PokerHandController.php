@@ -61,7 +61,7 @@ class PokerhandController extends Controller {
 	 */
 	public function show($id)
 	{
-		$hand = Pokerhand::find($id);
+		$hand = Pokerhand::with('user')->find($id);
 		$editHand = false;
 		if(Auth::user()->id == $hand->user_id || Entrust::can('edit-pokerhand'))
 			$editHand = true;

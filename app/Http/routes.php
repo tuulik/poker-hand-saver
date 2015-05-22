@@ -11,6 +11,16 @@
 |
 */
 
+Route::group(
+	[
+		'prefix' => LaravelLocalization::setLocale(),
+		'middleware' => [ 'localeSessionRedirect', 'localizationRedirect' ]
+	],
+	function()
+	{
+		Route::get('pokerhand/create', 'PokerhandController@create');
+	});
+
 Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
 
@@ -37,4 +47,4 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::resource('pokerhand', 'PokerhandController');
+Route::resource('pokerhand', 'PokerhandController', ['except' => ['create']]);
