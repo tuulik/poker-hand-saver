@@ -33,7 +33,7 @@
             <img src="{{ Croppa::url(asset('/avatars/default.png'), 100, 100) }}">
         @endif
         <br><a href="{{url('view-user/' . $hand->user->id)}}">{{$hand->user->name }}</a> {{ $hand->user->avatar }} <br>
-        Hand: <div class="hand">{{$hand->hand}}</div> <br>Description: <div class="description">{!!$hand->description!!}</div>
+        Hand: <div class="hand">{{ $hand->hand }}</div> <br>Description: <div class="description">{!!$hand->description!!}</div>
         @if($editHand == true)
             <br><a href="{{$hand->id . '/edit'}}">Edit hand</a>
         @endif
